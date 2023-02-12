@@ -3,7 +3,6 @@
 <html>
 <%@ include file="/header.jsp" %>
 <body id="page-top">
-
 <!-- Page Wrapper -->
 <div id="wrapper">
 
@@ -59,13 +58,6 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-<%--                <div class="d-sm-flex align-items-center justify-content-between mb-4">--%>
-<%--                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>--%>
-<%--                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i--%>
-<%--                            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>--%>
-<%--                </div>--%>
-
-                <!-- Page Heading -->
                           <div class="d-sm-flex align-items-center justify-content-between mb-4">
                             <h1 class="h3 mb-0 text-gray-800">UsersCRUD</h1>
                             <a href="<c:url value="/user/add"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
@@ -76,6 +68,7 @@
                               <h6 class="m-0 font-weight-bold text-primary">Lista użytkowników</h6>
                             </div>
                             <div class="card-body">
+<%--                                <form action="/user/list" method="get">--%>
                               <div class="table-responsive">
                           <table class="table">
                             <tr>
@@ -103,11 +96,11 @@
                         </div>
             </div>
             <!-- /.container-fluid -->
-
         </div>
-        <!-- End of Main Content -->
-        <%@ include file="/footer.jsp" %>
+</div>
+<!-- End of Main Content -->
 
+<%@ include file="/footer.jsp" %>
 </body>
 </html>
 

@@ -65,13 +65,17 @@
                 </div>
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Edycja użytkownika</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Szczegoły użytkownika</h6>
                     </div>
                     <div class="card-body">
                         <form method="post">
-                            <input type="hidden" name="id" value="${user.id}"/>
                             <div class="form-group">
-                                <label for="userName">Nazwa</label>
+                                <label for="id">Id</label>
+                                <input value="${user.id}" name="id" type="text" class="form-control"
+                                       id="id" placeholder="id użytkownika">
+                            </div>
+                            <div class="form-group">
+                                <label for="userName">Nazwa użytkonika</label>
                                 <input value="${user.userName}" name="userName" type="text" class="form-control"
                                        id="userName" placeholder="Nazwa użytkownika">
                             </div>
@@ -80,20 +84,12 @@
                                 <input value="${user.email}" name="userEmail" type="email" class="form-control"
                                        id="userEmail" placeholder="Email użytkownika">
                             </div>
-                            <div class="form-group">
-                                <label for="userPassword">Hasło</label>
-                                <input name="userPassword" type="password" class="form-control" id="userPassword"
-                                       placeholder="Hasło użytkownika">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Edytuj</button>
+                            <button type="submit" class="btn btn-primary">OK</button>
                         </form>
 
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<%@ include file="/footer.jsp" %>
+            <%@ include file="/footer.jsp" %>
 </body>
 </html>

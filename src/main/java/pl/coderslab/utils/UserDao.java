@@ -1,6 +1,8 @@
-package pl.coderslab;
+package pl.coderslab.utils;
 
 import org.mindrot.jbcrypt.BCrypt;
+import pl.coderslab.utils.User;
+import pl.coderslab.utils.DbUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

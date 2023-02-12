@@ -1,6 +1,6 @@
 package pl.coderslab.users;
 
-import pl.coderslab.UserDao;
+import pl.coderslab.utils.UserDao;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

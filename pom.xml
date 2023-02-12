@@ -40,7 +40,4 @@
           <version>8.0.20</version>
       </dependency>
   </dependencies>
-  <build>
-    <finalName>jee-user-crud</finalName>
-  </build>
 </project>

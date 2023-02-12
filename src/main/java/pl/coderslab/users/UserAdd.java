@@ -1,7 +1,7 @@
 package pl.coderslab.users;
 
-import pl.coderslab.User;
-import pl.coderslab.UserDao;
+import pl.coderslab.utils.User;
+import pl.coderslab.utils.UserDao;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -18,7 +18,7 @@ public class UserAdd extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        User user = new User();
+            User user = new User();
             user.setUserName(request.getParameter("userName"));
             user.setEmail(request.getParameter("userEmail"));
             user.setPassword(request.getParameter("userPassword"));

@@ -1,4 +1,4 @@
-package pl.coderslab;
+package pl.coderslab.utils;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -19,7 +19,7 @@ public class DbUtil {
             try {
                 Context initContext = new InitialContext();
                 Context envContext = (Context) initContext.lookup("java:/comp/env");
-                dataSource = (DataSource) envContext.lookup("jdbc/users");
+                dataSource = (DataSource) envContext.lookup("jdbc/workshop2");
             } catch (NamingException e) {
                 e.printStackTrace();
             }

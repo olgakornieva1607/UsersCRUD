@@ -28,8 +28,8 @@ public class DbUtil {
     }
 
     public static Connection connect() throws SQLException {
-        Connection conn = DbUtil.getConnection();
-        return conn;
+        return DbUtil.getConnection();
+
     }
 
 }
